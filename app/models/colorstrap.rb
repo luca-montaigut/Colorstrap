@@ -1,0 +1,2 @@
+class Colorstrap < ApplicationRecord
+end

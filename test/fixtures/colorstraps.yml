@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  primary: MyString
+  secondary: MyString
+  success: MyString
+  info: MyString
+  warning: MyString
+  danger: MyString
+
+two:
+  primary: MyString
+  secondary: MyString
+  success: MyString
+  info: MyString
+  warning: MyString
+  danger: MyString

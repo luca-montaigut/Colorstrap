@@ -1,0 +1,44 @@
+<div class="container text-center">
+
+  <%= form_with url: colorstraps_path do |f| %>
+    <div>
+    <%= f.label :primary %>
+    <%= f.color_field :primary, type:"color", value:"#007bff", id:"primary" %>
+
+    <%= f.label :secondary %>
+    <%= f.color_field :secondary, type:"color", value:"#6c757d" %>
+
+    <%= f.label :success %>
+    <%= f.color_field :success, type:"color", value:"#28a745" %> 
+
+    <%= f.label :info %>
+    <%= f.color_field :info, type:"color", value:"#17a2b8" %>
+
+    <%= f.label :warning %>
+    <%= f.color_field :warning, type:"color", value:"#ffc107" %>
+
+    <%= f.label :danger %>
+    <%= f.color_field :danger, type:"color", value:"#dc3545" %> 
+    </div>
+    <div>
+    <%= f.submit %>
+    </div>
+  <% end %>
+
+</div>
+
+
+<script>
+let root = document.documentElement;
+
+root.addEventListener("change", e => {
+  root.style.setProperty('--primary', document.getElementById('primary').value);
+  root.style.setProperty('--secondary', document.getElementById('secondary').value);
+  root.style.setProperty('--success', document.getElementById('success').value);
+  root.style.setProperty('--info', document.getElementById('info').value);
+  root.style.setProperty('--warning', document.getElementById('warning').value);
+  root.style.setProperty('--danger', document.getElementById('danger').value);
+
+});
+
+</script>
