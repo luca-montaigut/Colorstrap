@@ -1,0 +1,33 @@
+  <hr>
+<h1 class="text-center">Colorstrap Beta</h1>  
+  
+  <hr>
+
+<%= render 'colorform' %>
+
+<br>
+<p class="text-center">Cliquez sur "Save" pour générer le code CSS correspondant à votre magnifique selection. Ensuite copier-coller le dans un fichier <b>bootstrap.min.css</b></b>
+<p class="text-center text-muted">Ne vous inquiétez pas pour les couleurs des hovers et autres qui ne s'affichent pas, elles sont calculés correctement mais pas encore intégrer en JS...</b>
+
+
+  <hr>
+
+<%= render 'kitui' %>
+
+
+
+<script>
+let root = document.documentElement;
+
+root.addEventListener("change", e => {
+  root.style.setProperty('--primary', document.getElementById('primary').value);
+  root.style.setProperty('--primary-darken', document.getElementById('primary').value);
+  root.style.setProperty('--secondary', document.getElementById('secondary').value);
+  root.style.setProperty('--success', document.getElementById('success').value);
+  root.style.setProperty('--info', document.getElementById('info').value);
+  root.style.setProperty('--warning', document.getElementById('warning').value);
+  root.style.setProperty('--danger', document.getElementById('danger').value);
+
+});
+
+</script>

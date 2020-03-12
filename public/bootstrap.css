@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- :root {
+:root {
   --blue:#007bff;
   --indigo:#6610f2;
   --purple:#6f42c1;
@@ -2984,7 +2984,6 @@ fieldset:disabled a.btn {
 
 .btn-outline-info:focus, .btn-outline-info.focus {
   box-shadow: 0 0 0 0.2rem var(--info-lighten);
-}
 
 .btn-outline-info.disabled, .btn-outline-info:disabled {
   color: var(--info);

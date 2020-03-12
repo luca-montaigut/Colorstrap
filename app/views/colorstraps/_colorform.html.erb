@@ -20,6 +20,7 @@
     <%= f.label :danger %>
     <%= f.color_field :danger, type:"color", value:"#dc3545" %> 
     </div>
+
     <div>
     <%= f.submit %>
     </div>
@@ -28,17 +29,3 @@
 </div>
 
 
-<script>
-let root = document.documentElement;
-
-root.addEventListener("change", e => {
-  root.style.setProperty('--primary', document.getElementById('primary').value);
-  root.style.setProperty('--secondary', document.getElementById('secondary').value);
-  root.style.setProperty('--success', document.getElementById('success').value);
-  root.style.setProperty('--info', document.getElementById('info').value);
-  root.style.setProperty('--warning', document.getElementById('warning').value);
-  root.style.setProperty('--danger', document.getElementById('danger').value);
-
-});
-
-</script>
