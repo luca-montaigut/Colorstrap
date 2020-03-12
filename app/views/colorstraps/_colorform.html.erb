@@ -24,6 +24,26 @@
     <div>
     <%= f.submit %>
     </div>
+<hr>
+    <h5>Options avancées</h5>
+    <div>
+
+    <%= f.label :background %>
+    <%= f.color_field :background, type:"color", value:"#fff" %> 
+    
+    <%= f.label :text_light %>
+    <%= f.color_field :text_light, type:"color", value:"#fff" %> 
+
+    <%= f.label :text_dark %>
+    <%= f.color_field :text_dark, type:"color", value:"#212529" %> 
+
+    <%= f.label :light %>
+    <%= f.color_field :light, type:"color", value:"#f8f9fa" %> 
+
+    <%= f.label :dark %>
+    <%= f.color_field :dark, type:"color", value:"#343a40" %>                 
+    </div>
+<hr>
   <% end %>
 
 </div>

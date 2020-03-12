@@ -12,7 +12,19 @@ class ColorstrapsController < ApplicationController
   end
 
   def create
-    @color = Colorstrap.create(primary: params[:primary], secondary: params[:secondary], success: params[:success], info: params[:info], warning: params[:warning], danger: params[:danger])
+    @color = Colorstrap.create(
+      primary: params[:primary], 
+      secondary: params[:secondary], 
+      success: params[:success], 
+      info: params[:info], 
+      warning: params[:warning], 
+      danger: params[:danger],
+      background: params[:background],
+      text_light: params[:text_light],
+      text_dark: params[:text_dark],
+      light: params[:light],
+      dark: params[:dark]
+    )
     redirect_to @color
   end
 

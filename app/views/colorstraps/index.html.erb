@@ -6,8 +6,11 @@
 <%= render 'colorform' %>
 
 <br>
-<p class="text-center">Cliquez sur "Save" pour générer le code CSS correspondant à votre magnifique selection. Ensuite copier-coller le dans un fichier <b>bootstrap.min.css</b></b>
+<p class="text-center">Cliquez sur "Save" pour générer le code CSS correspondant à votre selection. Ensuite copier-coller le dans un fichier <b>bootstrap.min.css</b> ou télécharger le directement.</b>
 <p class="text-center text-muted">Ne vous inquiétez pas pour les couleurs des hovers et autres qui ne s'affichent pas, elles sont calculés correctement mais pas encore intégrer en JS...</b>
+<hr>
+<p class="text-center">Click on "Save" to generate the CSS code relative to your selection. Then copy-paste it in a <b>bootstrap.min.css</b> file or download it directly.</b>
+<p class="text-center text-muted">Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
 
 
   <hr>
@@ -41,6 +44,11 @@ root.addEventListener("change", e => {
   root.style.setProperty('--info', document.getElementById('info').value);
   root.style.setProperty('--warning', document.getElementById('warning').value);
   root.style.setProperty('--danger', document.getElementById('danger').value);
+  root.style.setProperty('--background', document.getElementById('background').value);
+  root.style.setProperty('--text-light', document.getElementById('text_light').value);
+  root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
+  root.style.setProperty('--light', document.getElementById('light').value);
+  root.style.setProperty('--dark', document.getElementById('dark').value);
 
 });
 

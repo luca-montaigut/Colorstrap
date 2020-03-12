@@ -52,10 +52,12 @@
   --danger-darken: <%= @color.danger.paint.darken %>;
   --danger-lighten: <%= @color.danger.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(225, 83, 97, 0.5) | #268fff + 50% sur alpha */
 
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --text-light: #fff;
-  --text-dark: #212529;
+  --backgroung: <%= @color.background %>;
+
+  --light: <%= @color.light %>;
+  --dark: <%= @color.dark %>;
+  --text-light: <%= @color.text_light %>;
+  --text-dark: <%= @color.text_dark %>;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
