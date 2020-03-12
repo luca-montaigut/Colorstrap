@@ -384,3 +384,108 @@ Processing by ColorstrapsController#show as CSS
 Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2020-03-12 13:47:15 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (4.0ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/colorstraps" for ::1 at 2020-03-12 13:47:28 +0100
+Processing by ColorstrapsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"matSYzTQRQAY/qQVF6o0zSQNGqKyDdTsd9HAXM7RQ3/EKJB3JwU8QJufWtCkyQrG4fnbyY/sO/rBYhxI3+NASw==", "primary"=>"#007bff", "secondary"=>"#6c757d", "success"=>"#28a745", "info"=>"#17a2b8", "warning"=>"#ffc107", "danger"=>"#dc3545", "commit"=>"Save "}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/colorstraps_controller.rb:15
+  [1m[36mColorstrap Create (0.2ms)[0m  [1m[32mINSERT INTO "colorstraps" ("primary", "secondary", "success", "info", "warning", "danger", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["primary", "#007bff"], ["secondary", "#6c757d"], ["success", "#28a745"], ["info", "#17a2b8"], ["warning", "#ffc107"], ["danger", "#dc3545"], ["created_at", "2020-03-12 12:47:28.427315"], ["updated_at", "2020-03-12 12:47:28.427315"]]
+  ↳ app/controllers/colorstraps_controller.rb:15
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/colorstraps_controller.rb:15
+Redirected to http://localhost:3000/colorstraps/33
+Completed 200 OK in 4ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/colorstraps/33" for ::1 at 2020-03-12 13:47:28 +0100
+Processing by ColorstrapsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mColorstrap Load (0.2ms)[0m  [1m[34mSELECT  "colorstraps".* FROM "colorstraps" WHERE "colorstraps"."id" = $1 LIMIT $2[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/colorstraps_controller.rb:7
+  Rendering colorstraps/show.html.erb within layouts/application
+  Rendered colorstraps/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-03-12 13:47:29 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (3.7ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-12 13:47:34 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (3.1ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/colorstraps" for ::1 at 2020-03-12 13:47:40 +0100
+Processing by ColorstrapsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WKgyG8Sv8XWLtr7pOOWQf6HmMWGzZFs3h0aLNuCywr3I7be88J/rWgs6v8qqbSx4zFAcGd9PLukWa7CTCMpStQ==", "primary"=>"#ff8ea9", "secondary"=>"#6c757d", "success"=>"#28a745", "info"=>"#17a2b8", "warning"=>"#ffc107", "danger"=>"#dc3545", "commit"=>"Save "}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/colorstraps_controller.rb:15
+  [1m[36mColorstrap Create (0.2ms)[0m  [1m[32mINSERT INTO "colorstraps" ("primary", "secondary", "success", "info", "warning", "danger", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["primary", "#ff8ea9"], ["secondary", "#6c757d"], ["success", "#28a745"], ["info", "#17a2b8"], ["warning", "#ffc107"], ["danger", "#dc3545"], ["created_at", "2020-03-12 12:47:40.263438"], ["updated_at", "2020-03-12 12:47:40.263438"]]
+  ↳ app/controllers/colorstraps_controller.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/colorstraps_controller.rb:15
+Redirected to http://localhost:3000/colorstraps/34
+Completed 200 OK in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/colorstraps/34" for ::1 at 2020-03-12 13:47:40 +0100
+Processing by ColorstrapsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mColorstrap Load (0.2ms)[0m  [1m[34mSELECT  "colorstraps".* FROM "colorstraps" WHERE "colorstraps"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/colorstraps_controller.rb:7
+  Rendering colorstraps/show.html.erb within layouts/application
+  Rendered colorstraps/show.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-03-12 13:47:41 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (3.9ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/colorstraps" for ::1 at 2020-03-12 13:50:47 +0100
+Processing by ColorstrapsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNkACXWZMTExO/3HcICuDJyVRJrnVSxErNo8P+odPw8dWsIdZkxIcbJaAwLD45AHWWGF8dq0w1IaaeAr+y88Ow==", "primary"=>"#ffaa92", "secondary"=>"#6c757d", "success"=>"#28a745", "info"=>"#17a2b8", "warning"=>"#ffc107", "danger"=>"#dc3545", "commit"=>"Save "}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/colorstraps_controller.rb:15
+  [1m[36mColorstrap Create (0.2ms)[0m  [1m[32mINSERT INTO "colorstraps" ("primary", "secondary", "success", "info", "warning", "danger", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["primary", "#ffaa92"], ["secondary", "#6c757d"], ["success", "#28a745"], ["info", "#17a2b8"], ["warning", "#ffc107"], ["danger", "#dc3545"], ["created_at", "2020-03-12 12:50:47.094179"], ["updated_at", "2020-03-12 12:50:47.094179"]]
+  ↳ app/controllers/colorstraps_controller.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/colorstraps_controller.rb:15
+Redirected to http://localhost:3000/colorstraps/35
+Completed 200 OK in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/colorstraps/35" for ::1 at 2020-03-12 13:50:47 +0100
+Processing by ColorstrapsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mColorstrap Load (0.2ms)[0m  [1m[34mSELECT  "colorstraps".* FROM "colorstraps" WHERE "colorstraps"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/colorstraps_controller.rb:7
+  Rendering colorstraps/show.html.erb within layouts/application
+  Rendered colorstraps/show.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.2ms)
+
+
