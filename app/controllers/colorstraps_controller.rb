@@ -5,6 +5,10 @@ class ColorstrapsController < ApplicationController
   
   def show
     @color = Colorstrap.find(params[:id])
+    respond_to do |format|
+      format.html { }
+      format.css { }
+    end
   end
 
   def create

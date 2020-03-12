@@ -1,10 +1,3 @@
-<hr>
-<div class="text-center">
-<%= link_to "Retour sur Colorstrap", root_path, class:"btn btn-primary"%>
-<%= link_to "test", colorstrap_path(@color.id, format: :css), download: "boostrap", class:"btn btn-success" %>
-</div>
-<hr>
-
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -47,7 +40,7 @@
   --warning:<%= @color.warning %>;
   --warning-darken: <%= @color.warning.paint.darken %>;
   --warning-lighten: <%= @color.warning.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(222, 170, 12, 0.5) | #deaa0c + 50% sur alpha */
-  
+
   --danger:<%= @color.danger %>;
   --danger-darken: <%= @color.danger.paint.darken %>;
   --danger-lighten: <%= @color.danger.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(225, 83, 97, 0.5) | #268fff + 50% sur alpha */
@@ -3887,7 +3880,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: var(--primary-lighten); 
+  background-color: var(--primary-lighten);
 }
 
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
@@ -10251,4 +10244,3 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
