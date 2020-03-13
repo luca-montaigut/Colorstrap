@@ -25,42 +25,43 @@
   --white: #fff;
   --black: #000;
 
-  --primary:#007bff;
-  --primary-darken: #0062cc;
-  --primary-lighten: rgba(38, 143, 255, 0.5); /* #268fff + 50% sur alpha */
+   --primary:<%= @color.primary %>;
+  --primary-darken: <%= @color.primary.paint.darken %>;
+  --primary-lighten: <%= @color.primary.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(38, 143, 255, 0.5) | #268fff + 50% sur alpha */
 
-  --secondary:#6c757d;
-  --secondary-darken: #545b62;
-  --secondary-lighten: rgba(130, 138, 145, 0.5); /* #828a91 + 50% sur alpha */
+  --secondary:<%= @color.secondary %>;
+  --secondary-darken: <%= @color.secondary.paint.darken %>;
+  --secondary-lighten: <%= @color.secondary.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(130, 138, 145, 0.5) | #828a91 + 50% sur alpha */
 
-  --success:#28a745;
-  --success-darken: #1e7e34;
-  --success-lighten: rgba(72, 180, 97, 0.5); /* #48b461 + 50% sur alpha */
+  --success:<%= @color.success %>;
+  --success-darken: <%= @color.secondary.paint.darken %>;
+  --success-lighten: <%= @color.success.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(72, 180, 97, 0.5) | #48b461 + 50% sur alpha */
 
-  --info:#17a2b8;
-  --info-darken: #117a8b;
-  --info-lighten: rgba(58, 176, 195, 0.5); /* #3ab0c3 + 50% sur alpha */
+  --info:<%= @color.info %>;
+  --info-darken: <%= @color.info.paint.darken %>;
+  --info-lighten: <%= @color.info.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(58, 176, 195, 0.5) | #3ab0c3 + 50% sur alpha */
 
-  --warning:#ffc107;
-  --warning-darken: #d39e00;
-  --warning-lighten: rgba(222, 170, 12, 0.5); /* #deaa0c + 50% sur alpha */
+  --warning:<%= @color.warning %>;
+  --warning-darken: <%= @color.warning.paint.darken %>;
+  --warning-lighten: <%= @color.warning.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(222, 170, 12, 0.5) | #deaa0c + 50% sur alpha */
   
-  --danger:#dc3545;
-  --danger-darken: #bd2130;
-  --danger-lighten: rgba(225, 83, 97, 0.5); /* #268fff + 50% sur alpha */
+  --danger:<%= @color.danger %>;
+  --danger-darken: <%= @color.danger.paint.darken %>;
+  --danger-lighten: <%= @color.danger.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(225, 83, 97, 0.5) | #268fff + 50% sur alpha */
 
-  --backgroung: #fff;
+  --backgroung: <%= @color.background %>;
 
-  --light: #f8f9fa;
-  --light-darken: #dae0e5;
-  --light-lighten: rgba(216, 217, 219, 0.5); /* #d8d9db + 50% sur alpha */
+  --light: <%= @color.light %>;
+  --light-darken: <%= @color.light.paint.darken %>;
+  --light-lighten: <%= @color.light.paint.brighten.opacity(0.5).to_rgb %>;
 
-  --dark: #343a40;
-  --dark-darken: #1d2124;
-  --dark-lighten: rgba(82, 88, 93, 0.5); /* #52585d + 50% sur alpha */
+  --dark: <%= @color.dark %>;
+  --dark-darken: <%= @color.dark.paint.darken %>;
+  --dark-lighten: <%= @color.dark.paint.brighten.opacity(0.5).to_rgb %>;
 
-  --text-light: #fff;
-  --text-dark: #212529;
+  --text-light: <%= @color.text_light %>;
+  --text-dark: <%= @color.text_dark %>;
+
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
