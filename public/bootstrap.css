@@ -1,10 +1,7 @@
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+/*
+ * Colorstrap (https://colorstrap.herokuapp.com/) for Bootstrap v4.4.1 (https://getbootstrap.com/)
  */
-:root {
+ :root {
   --blue:#007bff;
   --indigo:#6610f2;
   --purple:#6f42c1;
@@ -48,7 +45,13 @@
   --backgroung: #fff;
 
   --light: #f8f9fa;
+  --light-darken: #dae0e5;
+  --light-lighten: rgba(216, 217, 219, 0.5); /* #d8d9db + 50% sur alpha */
+
   --dark: #343a40;
+  --dark-darken: #1d2124;
+  --dark-lighten: rgba(82, 88, 93, 0.5); /* #52585d + 50% sur alpha */
+
   --text-light: #fff;
   --text-dark: #212529;
   --breakpoint-xs: 0;
@@ -2811,15 +2814,15 @@ fieldset:disabled a.btn {
 
 .btn-light:hover {
   color: var(--text-dark);
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
+  background-color: var(--light-darken);
+  border-color: var(--light-darken);
 }
 
 .btn-light:focus, .btn-light.focus {
   color: var(--text-dark);
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  background-color: var(--light-darken);
+  border-color: var(--light-darken);
+  box-shadow: 0 0 0 0.2rem var(--light-lighten);
 }
 
 .btn-light.disabled, .btn-light:disabled {
@@ -2831,13 +2834,13 @@ fieldset:disabled a.btn {
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
 .show > .btn-light.dropdown-toggle {
   color: var(--text-dark);
-  background-color: #dae0e5;
+  background-color: var(--light-darken);
   border-color: #d3d9df;
 }
 
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  box-shadow: 0 0 0 0.2rem var(--light-lighten);
 }
 
 .btn-dark {
@@ -2848,15 +2851,15 @@ fieldset:disabled a.btn {
 
 .btn-dark:hover {
   color: var(--text-light);
-  background-color: #23272b;
-  border-color: #1d2124;
+  background-color: var(--dark-darken);
+  border-color: var(--dark-darken);
 }
 
 .btn-dark:focus, .btn-dark.focus {
   color: var(--text-light);
-  background-color: #23272b;
-  border-color: #1d2124;
-  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  background-color: var(--dark-darken);
+  border-color: var(--dark-darken);
+  box-shadow: 0 0 0 0.2rem var(--dark-lighten);
 }
 
 .btn-dark.disabled, .btn-dark:disabled {
@@ -2868,13 +2871,13 @@ fieldset:disabled a.btn {
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
 .show > .btn-dark.dropdown-toggle {
   color: var(--text-light);
-  background-color: #1d2124;
+  background-color: var(--dark-darken);
   border-color: #171a1d;
 }
 
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
 .show > .btn-dark.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  box-shadow: 0 0 0 0.2rem var(--dark-lighten);
 }
 
 .btn-outline-primary {
@@ -5242,7 +5245,7 @@ a.badge-danger:focus, a.badge-danger.focus {
 
 a.badge-light:hover, a.badge-light:focus {
   color: var(--text-dark);
-  background-color: #dae0e5;
+  background-color: var(--light-darken);
 }
 
 a.badge-light:focus, a.badge-light.focus {
@@ -5257,7 +5260,7 @@ a.badge-light:focus, a.badge-light.focus {
 
 a.badge-dark:hover, a.badge-dark:focus {
   color: var(--text-light);
-  background-color: #1d2124;
+  background-color: var(--dark-darken);
 }
 
 a.badge-dark:focus, a.badge-dark.focus {
@@ -6784,7 +6787,7 @@ button.bg-danger:focus {
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #dae0e5 !important;
+  background-color: var(--light-darken) !important;
 }
 
 .bg-dark {
@@ -6794,7 +6797,7 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background-color: var(--dark-darken) !important;
 }
 
 .bg-white {
@@ -10246,4 +10249,6 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+/*
+ * Made by Luca Montaigut (https://github.com/luca-montaigut) - 2020
+ */

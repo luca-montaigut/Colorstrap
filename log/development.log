@@ -858,3 +858,381 @@ Processing by ColorstrapsController#index as HTML
 Completed 200 OK in 372ms (Views: 366.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:19:27 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/luca/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (12.2ms)
+  Rendered colorstraps/_kitui.html.erb (1.5ms)
+  Rendered colorstraps/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 248ms (Views: 243.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:20:10 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (8.2ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:20:35 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.7ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:20:51 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.5ms)
+  Rendered colorstraps/_kitui.html.erb (2.0ms)
+  Rendered colorstraps/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:21:21 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (8.2ms)
+  Rendered colorstraps/_kitui.html.erb (7.5ms)
+  Rendered colorstraps/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 35ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:22:34 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.3ms)
+  Rendered colorstraps/_kitui.html.erb (2.2ms)
+  Rendered colorstraps/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:22:55 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.2ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:26:39 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.6ms)
+  Rendered colorstraps/_kitui.html.erb (3.2ms)
+  Rendered colorstraps/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:26:55 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.0ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:26:55 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (21.1ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:27:27 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.7ms)
+  Rendered colorstraps/_kitui.html.erb (2.6ms)
+  Rendered colorstraps/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:27:37 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.8ms)
+  Rendered colorstraps/_kitui.html.erb (2.0ms)
+  Rendered colorstraps/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:28:28 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.7ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:28:43 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.8ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:29:16 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (16.2ms)
+  Rendered colorstraps/_kitui.html.erb (3.4ms)
+  Rendered colorstraps/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:29:34 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.1ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:30:02 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (9.3ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:30:59 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (9.0ms)
+  Rendered colorstraps/_kitui.html.erb (2.1ms)
+  Rendered colorstraps/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.css.map"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:32:12 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (9.8ms)
+  Rendered colorstraps/_kitui.html.erb (2.4ms)
+  Rendered colorstraps/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:32:46 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.5ms)
+  Rendered colorstraps/_kitui.html.erb (2.7ms)
+  Rendered colorstraps/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:32:50 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.7ms)
+  Rendered colorstraps/_kitui.html.erb (3.0ms)
+  Rendered colorstraps/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:33:02 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (8.7ms)
+  Rendered colorstraps/_kitui.html.erb (2.6ms)
+  Rendered colorstraps/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:33:22 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (15.6ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:34:24 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (14.1ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:34:39 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.7ms)
+  Rendered colorstraps/_kitui.html.erb (2.6ms)
+  Rendered colorstraps/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:37:22 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (8.9ms)
+  Rendered colorstraps/_kitui.html.erb (3.1ms)
+  Rendered colorstraps/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:37:43 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (9.0ms)
+  Rendered colorstraps/_kitui.html.erb (2.5ms)
+  Rendered colorstraps/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:38:06 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (7.1ms)
+  Rendered colorstraps/_kitui.html.erb (1.9ms)
+  Rendered colorstraps/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:40:46 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (6.4ms)
+  Rendered colorstraps/_kitui.html.erb (2.4ms)
+  Rendered colorstraps/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:41:17 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (8.7ms)
+  Rendered colorstraps/_kitui.html.erb (1.8ms)
+  Rendered colorstraps/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 39ms (Views: 30.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:41:58 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (8.6ms)
+  Rendered colorstraps/_kitui.html.erb (3.1ms)
+  Rendered colorstraps/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 17:42:59 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (21.0ms)
+  Rendered colorstraps/_kitui.html.erb (2.1ms)
+  Rendered colorstraps/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 18:40:23 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (12.7ms)
+  Rendered colorstraps/_kitui.html.erb (3.6ms)
+  Rendered colorstraps/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 84ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 18:46:44 +0100
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (9.6ms)
+  Rendered colorstraps/_kitui.html.erb (2.7ms)
+  Rendered colorstraps/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
