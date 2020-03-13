@@ -62,6 +62,8 @@
   --text-light: <%= @color.text_light %>;
   --text-dark: <%= @color.text_dark %>;
 
+  --link-hover: <%= @color.link_hover %>;
+
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -195,7 +197,7 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
@@ -2880,7 +2882,7 @@ fieldset:disabled a.btn {
 .show > .btn-dark.dropdown-toggle {
   color: var(--text-light);
   background-color: var(--dark-darken);
-  border-color: #171a1d;
+  border-color: var(--dark-darken);
 }
 
 .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
@@ -3151,7 +3153,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: #0056b3;
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
@@ -5048,7 +5050,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: var(--link-hover);
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -5178,7 +5180,7 @@ a.badge-primary:focus, a.badge-primary.focus {
 
 a.badge-secondary:hover, a.badge-secondary:focus {
   color: var(--text-light);
-  background-color: #545b62;
+  background-color: var(--secondary-darken);
 }
 
 a.badge-secondary:focus, a.badge-secondary.focus {
@@ -5258,7 +5260,7 @@ a.badge-light:hover, a.badge-light:focus {
 
 a.badge-light:focus, a.badge-light.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.2rem var(--light-lighten);
 }
 
 .badge-dark {
@@ -5273,7 +5275,7 @@ a.badge-dark:hover, a.badge-dark:focus {
 
 a.badge-dark:focus, a.badge-dark.focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  box-shadow: 0 0 0 0.2rem var(--dark-lighten);
 }
 
 .jumbotron {
@@ -5381,7 +5383,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-warning {
   color: #856404;
-  background-color: var(--white)3cd;
+  background-color: #ffeeba;
   border-color: #ffeeba;
 }
 
@@ -10075,7 +10077,7 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #0056b3 !important;
+  color: var(--link-hover) !important;
 }
 
 .text-secondary {

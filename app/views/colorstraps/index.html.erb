@@ -42,9 +42,8 @@
 <script>
 let root = document.documentElement;
 
-root.addEventListener("change", e => {
+addEventListener("change", e => {
   root.style.setProperty('--primary', document.getElementById('primary').value);
-  root.style.setProperty('--primary-darken', document.getElementById('primary').value);
   root.style.setProperty('--secondary', document.getElementById('secondary').value);
   root.style.setProperty('--success', document.getElementById('success').value);
   root.style.setProperty('--info', document.getElementById('info').value);
@@ -55,6 +54,7 @@ root.addEventListener("change", e => {
   root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
   root.style.setProperty('--light', document.getElementById('light').value);
   root.style.setProperty('--dark', document.getElementById('dark').value);
+  root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
 
 });
 

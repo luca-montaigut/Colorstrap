@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_12_221350) do
+ActiveRecord::Schema.define(version: 2020_03_13_221357) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_221350) do
     t.string "text_dark"
     t.string "light"
     t.string "dark"
+    t.string "link_hover"
   end
 
 end
