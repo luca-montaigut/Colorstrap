@@ -836,3 +836,25 @@ Processing by ColorstrapsController#show as HTML
 Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-03-13 11:19:07 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/luca/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (15.4ms)
+  Rendered colorstraps/_kitui.html.erb (2.2ms)
+  Rendered colorstraps/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 414ms (Views: 407.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-03-13 11:19:58 +0100
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/luca/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ColorstrapsController#index as HTML
+  Rendering colorstraps/index.html.erb within layouts/application
+  Rendered colorstraps/_colorform.html.erb (14.7ms)
+  Rendered colorstraps/_kitui.html.erb (2.3ms)
+  Rendered colorstraps/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 372ms (Views: 366.3ms | ActiveRecord: 0.0ms)
+
+
