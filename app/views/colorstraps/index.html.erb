@@ -1,22 +1,15 @@
-  <hr>
-  <div class="d-flex flex-direction-row justify-content-center align-items-center">
-    <%= image_tag "logo_colorstrap.svg", height: 100 %>
-  </div>
-  
-  <hr>
+<div class="d-flex flex-direction-row justify-content-center align-items-center mt-3">
+  <%= image_tag "logo_colorstrap.svg", height: 100 %>
+</div>
+
+<hr>
 
 <%= render 'colorform' %>
 
 <hr>
-
-<p class="text-center">Cliquez sur "Save" pour générer le code CSS correspondant à votre selection. Ensuite copier-coller le dans un fichier <b>bootstrap.min.css</b> ou télécharger le directement.</b>
-<p class="text-center text-muted">Ne vous inquiétez pas pour les couleurs des hovers et autres qui ne s'affichent pas, elles sont calculés correctement mais pas encore intégrer en JS...</b>
+  <p class="text-center text-muted">Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
 <hr>
-<p class="text-center">Click on "Save" to generate the CSS code relative to your selection. Then copy-paste it in a <b>bootstrap.min.css</b> file or download it directly.</b>
-<p class="text-center text-muted">Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
 
-
-  <hr>
 
 <%= render 'kitui' %>
 
@@ -41,6 +34,8 @@
 
 <script>
 let root = document.documentElement;
+let btn = document.getElementById('btn-options')
+let option = document.getElementById('options')
 
 addEventListener("change", e => {
   root.style.setProperty('--primary', document.getElementById('primary').value);
@@ -55,7 +50,16 @@ addEventListener("change", e => {
   root.style.setProperty('--light', document.getElementById('light').value);
   root.style.setProperty('--dark', document.getElementById('dark').value);
   root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
-
 });
+
+btn.addEventListener('click', e => {
+  if (btn.innerHTML.includes("Show")) {
+    options.style.display = "flex"
+    btn.innerHTML = "Hide advanced options"
+  } else if (btn.innerHTML.includes("Hide")) {
+    options.style.display = "none"
+    btn.innerHTML = "Show advanced options"    
+  }
+})
 
 </script>
