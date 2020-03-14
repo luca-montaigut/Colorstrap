@@ -55,7 +55,7 @@
   --text-light: #fff;
   --text-dark: #212529;
 
-  --a-hover: #0056b3;
+  --link-hover: #0056b3;
 
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -190,7 +190,7 @@ a {
 }
 
 a:hover {
-  color: var(--a-hover);
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
@@ -3146,7 +3146,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:hover {
-  color: var(--a-hover);
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
@@ -5043,7 +5043,7 @@ input[type="button"].btn-block {
 
 .page-link:hover {
   z-index: 2;
-  color: var(--a-hover);
+  color: var(--link-hover);
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -10070,7 +10070,7 @@ button.bg-dark:focus {
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: var(--a-hover) !important;
+  color: var(--link-hover) !important;
 }
 
 .text-secondary {
