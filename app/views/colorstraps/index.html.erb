@@ -1,23 +1,25 @@
-<div class="d-flex flex-direction-row justify-content-center align-items-center mt-3">
-  <%= image_tag "logo_colorstrap.svg", height: 100 %>
-</div>
+<div class="container-fluid colorstrap">
+  <div class="d-flex flex-direction-row justify-content-center align-items-center pt-3">
+    <%= image_tag "logo_colorstrap.svg", height: 100 %>
+  </div>
 
-<hr>
-
-<%= render 'colorform' %>
-
-<hr>
-  <p class="text-center text-muted">(Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
-<hr>
-
-<div class="container">
-  <h1 class="text-center">Your colors preview :</h1>
   <hr>
+
+  <%= render 'colorform' %>
+
+  <hr>
+    <p class="text-center text-muted">(Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
+  <hr>
+
+  <div class="container">
+    <h1 class="text-center">Your colors preview :</h1>
+    <hr>
+  </div>
 </div>
 <%= render 'kitui' %>
 
 <hr>
-<footer class="d-flex align-items-center">
+<footer class="d-flex align-items-center colorstrap">
   <div class="col-1 pl-lg-5"><%= image_tag "logo_min_colorstrap.svg", height: 50 %></div>
   <div class="col-10 text-center">
     <span>Made by <a href="https://github.com/luca-montaigut">Luca Montaigut</a> with <i class="fas fa-heart"></i></span> |
@@ -81,3 +83,82 @@
   reset.addEventListener("click", resetColors);
 
 </script>
+
+<style>
+  .colorstrap {
+    font-size : 1,3em;
+    color : #454545;
+    background-color : #fefefe;
+  }
+
+  .colorstrap .btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+
+  .colorstrap .btn-dark:focus, .colorstrap .btn-dark.focus {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+    box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  }
+
+  .colorstrap .btn-dark.disabled, .colorstrap .btn-dark:disabled {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-outline-dark:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-outline-dark:focus, .colorstrap .btn-outline-dark.focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  }
+
+  .colorstrap .btn-outline-dark.disabled, .colorstrap .btn-outline-dark:disabled {
+    color: #343a40;
+    background-color: transparent;
+  }
+
+
+  .colorstrap .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .colorstrap .btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .colorstrap .btn-outline-danger:focus, .btn-outline-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  }
+
+  .colorstrap .btn-outline-danger.disabled, .btn-outline-danger:disabled {
+    color: #dc3545;
+    background-color: transparent;
+  }
+
+  .colorstrap .text-muted {
+    color: #6c757d !important;
+  }
+
+</style>
