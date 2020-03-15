@@ -7,13 +7,10 @@
 <%= render 'colorform' %>
 
 <hr>
-  <p class="text-center text-muted">Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
+  <p class="text-center text-muted">(Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
 <hr>
 
-
 <%= render 'kitui' %>
-
-
 
 <hr>
 <footer class="d-flex align-items-center">
@@ -27,39 +24,35 @@
 </footer>
 
 
-
-    
-
-
-
 <script>
-let root = document.documentElement;
-let btn = document.getElementById('btn-options')
-let option = document.getElementById('options')
 
-addEventListener("change", e => {
-  root.style.setProperty('--primary', document.getElementById('primary').value);
-  root.style.setProperty('--secondary', document.getElementById('secondary').value);
-  root.style.setProperty('--success', document.getElementById('success').value);
-  root.style.setProperty('--info', document.getElementById('info').value);
-  root.style.setProperty('--warning', document.getElementById('warning').value);
-  root.style.setProperty('--danger', document.getElementById('danger').value);
-  root.style.setProperty('--background', document.getElementById('background').value);
-  root.style.setProperty('--text-light', document.getElementById('text_light').value);
-  root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
-  root.style.setProperty('--light', document.getElementById('light').value);
-  root.style.setProperty('--dark', document.getElementById('dark').value);
-  root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
-});
+  let root = document.documentElement;
+  let btn = document.getElementById('btn-options')
+  let option = document.getElementById('options')
 
-btn.addEventListener('click', e => {
-  if (btn.innerHTML.includes("Show")) {
-    options.style.display = "flex"
-    btn.innerHTML = "Hide advanced options"
-  } else if (btn.innerHTML.includes("Hide")) {
-    options.style.display = "none"
-    btn.innerHTML = "Show advanced options"    
-  }
-})
+  addEventListener("change", e => {
+    root.style.setProperty('--primary', document.getElementById('primary').value);
+    root.style.setProperty('--secondary', document.getElementById('secondary').value);
+    root.style.setProperty('--success', document.getElementById('success').value);
+    root.style.setProperty('--info', document.getElementById('info').value);
+    root.style.setProperty('--warning', document.getElementById('warning').value);
+    root.style.setProperty('--danger', document.getElementById('danger').value);
+    root.style.setProperty('--background', document.getElementById('background').value);
+    root.style.setProperty('--text-light', document.getElementById('text_light').value);
+    root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
+    root.style.setProperty('--light', document.getElementById('light').value);
+    root.style.setProperty('--dark', document.getElementById('dark').value);
+    root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
+  });
+
+  btn.addEventListener('click', e => {
+    if (btn.innerHTML.includes("Show")) {
+      options.style.display = "flex"
+      btn.innerHTML = "Hide advanced options"
+    } else if (btn.innerHTML.includes("Hide")) {
+      options.style.display = "none"
+      btn.innerHTML = "Show advanced options"    
+    }
+  })
 
 </script>
