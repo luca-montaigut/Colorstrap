@@ -50,6 +50,8 @@
     root.style.setProperty('--text-light', document.getElementById('text_light').value);
     root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
     root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
+    root.style.setProperty('--form-background', document.getElementById('form_background').value);
+    root.style.setProperty('--inner-background', document.getElementById('inner_background').value);
   }
 
   function resetColors(){
@@ -65,6 +67,8 @@
     document.getElementById('text_light').value = "#ffffff";
     document.getElementById('text_dark').value = "#212529";
     document.getElementById('link_hover').value = "#0056b3";
+    document.getElementById('form_background').value = "#ffffff";
+    document.getElementById('inner_background').value = "#e9ecef";
     pageColors()
   }
 

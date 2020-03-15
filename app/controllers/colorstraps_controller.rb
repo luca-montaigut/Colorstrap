@@ -24,7 +24,9 @@ class ColorstrapsController < ApplicationController
       text_dark: params[:text_dark],
       light: params[:light],
       dark: params[:dark],
-      link_hover: params[:link_hover]
+      link_hover: params[:link_hover],
+      form_background: params[:form_background],
+      inner_background: params[:inner_background]
     )
     redirect_to @color
   end
