@@ -1,7 +1,7 @@
 <div class="container text-center">
 
   <%= form_with url: colorstraps_path do |f| %>
-  
+
     <div class="row">
       <div class="col-lg">
         <%= f.label :primary %>
@@ -34,7 +34,10 @@
 
 <hr>
 
-    <h5 id="btn-options" class="btn btn-outline-dark">Show advanced options</h5>
+    <div class="d-flex justify-content-center align-items-center">
+      <h5 id="btn-options" class="btn btn-outline-dark mx-2">Show advanced options</h5>
+      <h5 id="reset" class="btn btn-outline-danger mx-2"><i class="fas fa-undo-alt"></i></h5>
+    </div>
     <div id="options" style="display : none;">
       <div class="container">
       <br>

@@ -10,6 +10,10 @@
   <p class="text-center text-muted">(Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
 <hr>
 
+<div class="container">
+  <h1 class="text-center">Your colors preview :</h1>
+  <hr>
+</div>
 <%= render 'kitui' %>
 
 <hr>
@@ -29,8 +33,9 @@
   let root = document.documentElement;
   let btn = document.getElementById('btn-options')
   let option = document.getElementById('options')
+  let reset = document.getElementById('reset')
 
-  addEventListener("change", e => {
+  function pageColors(){
     root.style.setProperty('--primary', document.getElementById('primary').value);
     root.style.setProperty('--secondary', document.getElementById('secondary').value);
     root.style.setProperty('--success', document.getElementById('success').value);
@@ -38,21 +43,41 @@
     root.style.setProperty('--warning', document.getElementById('warning').value);
     root.style.setProperty('--danger', document.getElementById('danger').value);
     root.style.setProperty('--background', document.getElementById('background').value);
-    root.style.setProperty('--text-light', document.getElementById('text_light').value);
-    root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
     root.style.setProperty('--light', document.getElementById('light').value);
     root.style.setProperty('--dark', document.getElementById('dark').value);
+    root.style.setProperty('--text-light', document.getElementById('text_light').value);
+    root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
     root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
-  });
+  }
 
-  btn.addEventListener('click', e => {
-    if (btn.innerHTML.includes("Show")) {
+  function resetColors(){
+    document.getElementById('primary').value = "#007bff";
+    document.getElementById('secondary').value = "#6c757d";
+    document.getElementById('success').value = "#28a745";
+    document.getElementById('info').value = "#17a2b8";
+    document.getElementById('warning').value = "#ffc107";
+    document.getElementById('danger').value = "#dc3545";
+    document.getElementById('background').value = "#ffffff";
+    document.getElementById('light').value = "#f8f9fa";
+    document.getElementById('dark').value = "#343a40";
+    document.getElementById('text_light').value = "#ffffff";
+    document.getElementById('text_dark').value = "#212529";
+    document.getElementById('link_hover').value = "#0056b3";
+    pageColors()
+  }
+
+  function hideShow() {
+      if (btn.innerHTML.includes("Show")) {
       options.style.display = "flex"
       btn.innerHTML = "Hide advanced options"
     } else if (btn.innerHTML.includes("Hide")) {
       options.style.display = "none"
       btn.innerHTML = "Show advanced options"    
     }
-  })
+  }
+
+  addEventListener("change", pageColors);
+  btn.addEventListener('click', hideShow)
+  reset.addEventListener("click", resetColors);
 
 </script>
