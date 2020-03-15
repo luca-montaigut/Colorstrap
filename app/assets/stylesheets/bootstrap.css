@@ -43,6 +43,7 @@
   --danger-lighten: rgba(225, 83, 97, 0.5); /* #268fff + 50% sur alpha */
 
   --background: #fff;
+  --form-background: #fff;
 
   --light: #f8f9fa;
   --light-darken: #dae0e5;
@@ -2095,7 +2096,7 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: var(--background);
+  background-color: var(--form-background);
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem var(--primary-lighten);
@@ -2133,7 +2134,7 @@ pre code {
 
 select.form-control:focus::-ms-value {
   color: #495057;
-  background-color: var(--background);
+  background-color: var(---form-background);
 }
 
 .form-control-file,
@@ -3855,7 +3856,7 @@ input[type="button"].btn-block {
   height: 1rem;
   pointer-events: none;
   content: "";
-  background-color: var(--background);
+  background-color: var(--form-background);
   border: #adb5bd solid 1px;
 }
 
@@ -3937,7 +3938,7 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: var(--background);
+  background-color: var(--form-background);
   -webkit-transform: translateX(0.75rem);
   transform: translateX(0.75rem);
 }
@@ -3972,7 +3973,7 @@ input[type="button"].btn-block {
 
 .custom-select:focus::-ms-value {
   color: #495057;
-  background-color: var(--background);
+  background-color: var(--form-background);
 }
 
 .custom-select[multiple], .custom-select[size]:not([size="1"]) {
@@ -4057,7 +4058,7 @@ input[type="button"].btn-block {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: var(--background);
+  background-color: var(--form-background);
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
 }
