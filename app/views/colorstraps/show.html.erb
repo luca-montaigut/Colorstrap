@@ -1,11 +1,11 @@
-<div class="text-center">
-  <%= link_to "« Retour au générateur", root_path, class:"btn btn-primary"%> | 
-  <%= link_to "Télécharger le fichier CSS complet", colorstrap_path(@color.id, notice: "min", format: :css), download: "colorstrap.min.css", class:"btn btn-success" %> | 
-  <%= link_to "Télécharger la surcouche CSS pour thème", colorstrap_path(@color.id, notice: "overlay", format: :css), download: "colorstrap.overlay.css", class:"btn btn-info" %>
+<div class="text-center colorstap">
+  <%= link_to "« Back to generator", root_path, class:"btn btn-primary"%> | 
+  <%= link_to "Download Custom Bootstap Default CSS", colorstrap_path(@color.id, notice: "min", format: :css), download: "colorstrap.min.css", class:"btn btn-success" %> | 
+  <%= link_to "Download Overlay Colorstrap for Theme", colorstrap_path(@color.id, notice: "overlay", format: :css), download: "colorstrap.overlay.css", class:"btn btn-info" %>
 </div>
 <hr>
 
-<h2 class="text-center">Votre code Bootstrap personnalisé</h2>
+<h2 class="text-center">Your Custom Bootstrap (Default theme) :</h2>
 
 <div class="container">
 /*
