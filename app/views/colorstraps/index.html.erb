@@ -1,9 +1,4 @@
 <div class="container-fluid colorstrap">
-  <div class="d-flex flex-direction-row justify-content-center align-items-center pt-3">
-    <%= image_tag "logo_colorstrap.svg", height: 100 %>
-  </div>
-
-  <hr>
 
   <%= render 'colorform' %>
 
@@ -11,31 +6,27 @@
     <p class="text-center text-muted">(Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
   <hr>
 
+  <%= render 'cdn' %>
+
+
+</div>
   <div class="container">
-    <h1 class="text-center">Your colors preview :</h1>
+    <h1 class="text-center">Your colors preview on <span id="theme_name">Default</span> theme :</h1>
     <hr>
   </div>
-</div>
 <%= render 'kitui' %>
 
-<hr>
-<footer class="d-flex align-items-center colorstrap">
-  <div class="col-1 pl-lg-5"><%= image_tag "logo_min_colorstrap.svg", height: 50 %></div>
-  <div class="col-10 text-center">
-    <span>Made by <a href="https://github.com/luca-montaigut">Luca Montaigut</a> with <i class="fas fa-heart"></i></span> |
-    <span>Contact : <a href="mailto:lmontaigut@gmail.com">lmontaigut@gmail.com</a></span>
-    <p>Based on <a href="https://bootswatch.com/" rel="nofollow">Bootswatch</a> who is based on <a href="https://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="https://fontawesome.com/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="https://fonts.google.com/" rel="nofollow">Google</a>.</p>
-  </div>
-  <div class="col-1 pb-3"><%= image_tag "lazyrabbit.svg", height: 75 %></div>
-</footer>
+
 
 
 <script>
 
   let root = document.documentElement;
-  let btn = document.getElementById('btn-options')
+  let btnOptions = document.getElementById('btn-options')
   let option = document.getElementById('options')
   let reset = document.getElementById('reset')
+  let themes = document.getElementById('themes')
+  let btnThemes = document.getElementById('btn-themes')
 
   function pageColors(){
     root.style.setProperty('--primary', document.getElementById('primary').value);
@@ -72,19 +63,69 @@
     pageColors()
   }
 
-  function hideShow() {
-      if (btn.innerHTML.includes("Show")) {
+  function hideShowOptions() {
+      if (btnOptions.innerHTML.includes("Show")) {
       options.style.display = "flex"
-      btn.innerHTML = "Hide advanced options"
-    } else if (btn.innerHTML.includes("Hide")) {
+      btnOptions.innerHTML = "Hide advanced options"
+    } else if (btnOptions.innerHTML.includes("Hide")) {
       options.style.display = "none"
-      btn.innerHTML = "Show advanced options"    
+      btnOptions.innerHTML = "Show advanced options"    
+    }
+  }
+
+  function changeTheme(e) {
+    let cdn = document.getElementById('cdn').children
+    for (let i = 0; i < cdn.length; i++) {
+      if (cdn[i].classList.contains(e.srcElement.id)) {
+        cdn[i].disabled = false
+      } else {
+        cdn[i].disabled = true
+      }
+    }
+    switch (e.srcElement.innerHTML) {
+      case "Cyborg":
+        root.style.setProperty('--background', document.getElementById('background').value = "#060606");
+        break;
+      case "Darkly":
+        root.style.setProperty('--background', document.getElementById('background').value = "#222222");
+        root.style.setProperty('--text-dark', document.getElementById('text_dark').value = "#828282");
+        root.style.setProperty('--inner-background', document.getElementById('inner_background').value = "#444444");
+        break;
+      case "Slate":
+        root.style.setProperty('--background', document.getElementById('background').value = "#272b30");
+        root.style.setProperty('--text-dark', document.getElementById('text_dark').value = "#ffffff");
+        break;
+      case "Solar":
+        root.style.setProperty('--background', document.getElementById('background').value = "#002b37");
+        break;
+      case "Superhero":
+        root.style.setProperty('--background', document.getElementById('background').value = "#2a3e51");
+        break;
+
+      default:
+        root.style.setProperty('--background', document.getElementById('background').value = "#ffffff");
+        root.style.setProperty('--text-dark', document.getElementById('text_dark').value = "#212529");
+        root.style.setProperty('--inner-background', document.getElementById('inner_background').value = "#E9ECEF");
+        break;
+    }
+    document.getElementById("theme_name").innerHTML = e.srcElement.innerHTML
+  }
+
+  function hideShowThemes() {
+      if (btnThemes.innerHTML.includes("Show")) {
+      themes.style.display = "flex"
+      btnThemes.innerHTML = "Hide Bootswatch themes"
+    } else if (btnThemes.innerHTML.includes("Hide")) {
+      themes.style.display = "none"
+      btnThemes.innerHTML = "Show Bootswatch themes"    
     }
   }
 
   addEventListener("change", pageColors);
-  btn.addEventListener('click', hideShow)
+  btnOptions.addEventListener('click', hideShowOptions);
   reset.addEventListener("click", resetColors);
+  themes.addEventListener('click', changeTheme);
+  btnThemes.addEventListener('click', hideShowThemes);
 
 </script>
 

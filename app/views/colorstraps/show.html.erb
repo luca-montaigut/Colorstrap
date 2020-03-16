@@ -1,10 +1,13 @@
-<hr>
 <div class="text-center">
-  <%= link_to "Retour sur Colorstrap", root_path, class:"btn btn-primary"%> | 
-  <%= link_to "Télécharger directement ❤️", colorstrap_path(@color.id, notice: "ok", format: :css), download: "bootstrap.min.css", class:"btn btn-success" %>
+  <%= link_to "« Retour au générateur", root_path, class:"btn btn-primary"%> | 
+  <%= link_to "Télécharger le fichier CSS complet", colorstrap_path(@color.id, notice: "min", format: :css), download: "colorstrap.min.css", class:"btn btn-success" %> | 
+  <%= link_to "Télécharger la surcouche CSS pour thème", colorstrap_path(@color.id, notice: "overlay", format: :css), download: "colorstrap.overlay.css", class:"btn btn-info" %>
 </div>
 <hr>
 
+<h2 class="text-center">Votre code Bootstrap personnalisé</h2>
+
+<div class="container">
 /*
  * Colorstrap (https://colorstrap.herokuapp.com/) for Bootstrap v4.4.1 (https://getbootstrap.com/)
  */
@@ -10295,3 +10298,4 @@ a.text-dark:hover, a.text-dark:focus {
 /*
  * Made by Luca Montaigut (https://github.com/luca-montaigut) - 2020
  */
+</div> 
