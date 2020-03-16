@@ -31,6 +31,7 @@
   --primary:<%= @color.primary %>;
   --primary-darken: <%= @color.primary.paint.darken %>;
   --primary-lighten: <%= @color.primary.paint.brighten.opacity(0.5).to_rgb %>; /* base : rgba(38, 143, 255, 0.5) | #268fff + 50% sur alpha */
+  --primary-super-lighten: <%= @color.primary.paint.lighten(25) %>;
 
   --secondary:<%= @color.secondary %>;
   --secondary-darken: <%= @color.secondary.paint.darken %>;
@@ -63,10 +64,12 @@
   --dark: <%= @color.dark %>;
   --dark-darken: <%= @color.dark.paint.darken %>;
   --dark-lighten: <%= @color.dark.paint.brighten.opacity(0.5).to_rgb %>;
+  
+  --link-hover: <%= @color.link_hover %>;
 
   --text-light: <%= @color.text_light %>;
   --text-dark: <%= @color.text_dark %>;
-  --link-hover: <%= @color.link_hover %>;
+  --inner-text: #495057;
 
   --tal-primary: <%= @color.primary.paint.lighten(36) %>;
   --tal-primary-hover: <%= @color.primary.paint.lighten(31) %>;
