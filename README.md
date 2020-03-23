@@ -28,3 +28,7 @@ With "Overlay Colorstrap for Theme" you have to put it in your <head> after your
 
 ## 🐰 Author
 Luca Montaigut : https://github.com/luca-montaigut
+
+### Contributors
+Théo Pomies : https://github.com/DevPomeis
+Lucien Passera : https://github.com/Crysicia
