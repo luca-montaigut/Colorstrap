@@ -15,7 +15,7 @@ Generate your css file
 Download one of the 2 files or copy-past the css code in a text file and save it as `.css`
 
 
-With "Custom Bootstrap Default CSS" you have to change your bootstap.css, bootstrap.min.css or Bootstrap CDN by :
+With "Custom Bootstrap Default CSS" you have to change your bootstrap.css, bootstrap.min.css or Bootstrap CDN by :
 
 `<link rel="stylesheet" type="text/css" href="colorstrap.min.css">`
 
