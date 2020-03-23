@@ -1,6 +1,6 @@
 # [ColorStrap](https://colorstrap.herokuapp.com/)
 
-Colorstrap is a simple color picker for [Bootstrap](https://getbootstrap.com/) who generate a css file with your color on native Bootstrap code or an overlay for use with [Bootswatch](https://bootswatch.com/) themes.
+Colorstrap is a simple color picker for [Bootstrap](https://getbootstrap.com/) who generate a css file with your colors on native Bootstrap code or an overlay for use with [Bootswatch](https://bootswatch.com/) themes.
 
 Visit on https://colorstrap.herokuapp.com/
 
@@ -23,6 +23,7 @@ With "Custom Bootstrap Default CSS" you have to change your bootstap.css, bootst
 With "Overlay Colorstrap for Theme" you have to put it in your <head> after your Bootstrap/Bootswach Theme file with :
   
 `<link rel="stylesheet" type="text/css" href="colorstrap.overlay.css">`
+
 
 
 ## 🐰 Author
