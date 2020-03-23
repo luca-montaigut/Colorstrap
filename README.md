@@ -1,6 +1,6 @@
 # [ColorStrap](https://colorstrap.herokuapp.com/)
 
-Colorstrap is a simple color picker for [Bootstrap](https://getbootstrap.com/) who generate a css file with your colors on native Bootstrap code or an overlay for use with [Bootswatch](https://bootswatch.com/) themes.
+Colorstrap is a simple colors picker for [Bootstrap](https://getbootstrap.com/) who generate a css file with your colors on native Bootstrap code or an overlay for use with [Bootswatch](https://bootswatch.com/) themes.
 
 Visit on https://colorstrap.herokuapp.com/
 
