@@ -1,24 +1,29 @@
-# README
+# [ColorStrap](https://colorstrap.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Colorstrap is a simple color picker for [Bootstrap](https://getbootstrap.com/) who generate a css file with your color on native Bootstrap code or an overlay for use with [Bootswatch](https://bootswatch.com/) themes.
 
-Things you may want to cover:
+Visit on https://colorstrap.herokuapp.com/
 
-* Ruby version
+![Image of site](https://i.imgur.com/LQY4BE3.gif)
 
-* System dependencies
+# How to use
 
-* Configuration
+Choose beautifuls colors
 
-* Database creation
+Generate your css file
 
-* Database initialization
+Download one of the 2 files or copy-past the css code in a text file and save it as `.css`
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+With "Custom Bootstrap Default CSS" you have to change your bootstap.css, bootstrap.min.css or Bootstrap CDN by :
 
-* Deployment instructions
+`<link rel="stylesheet" type="text/css" href="colorstrap.min.css">`
 
-* ...
+
+With "Overlay Colorstrap for Theme" you have to put it in your <head> after your Bootstrap/Bootswach Theme file with :
+  
+`<link rel="stylesheet" type="text/css" href="colorstrap.overlay.css">`
+
+
+## 🐰 Author
+Luca Montaigut : https://github.com/luca-montaigut
