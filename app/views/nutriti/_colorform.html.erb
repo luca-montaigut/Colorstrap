@@ -1,0 +1,84 @@
+<div class="container text-center">
+
+  <%= form_with url: colorstraps_path do |f| %>
+
+    <div class="row">
+      <div class="col-lg">
+        <%= f.label :primary %>
+        <%= f.color_field :primary, type:"color", value:"#007bff", id:"primary", class:"form-control" %>
+
+        <%= f.label :secondary %>
+        <%= f.color_field :secondary, type:"color", value:"#6c757d", class:"form-control" %>
+      </div>
+
+      <div class="col-lg">
+        <%= f.label :success %>
+        <%= f.color_field :success, type:"color", value:"#28a745", class:"form-control" %> 
+
+        <%= f.label :info %>
+        <%= f.color_field :info, type:"color", value:"#17a2b8", class:"form-control" %>
+      </div>
+
+      <div class="col-lg">
+        <%= f.label :warning %>
+        <%= f.color_field :warning, type:"color", value:"#ffc107", class:"form-control" %>
+
+        <%= f.label :danger %>
+        <%= f.color_field :danger, type:"color", value:"#dc3545", class:"form-control" %> 
+      </div>
+    </div>
+
+<br>
+
+    <div>
+      <%= f.submit "Generate", class:"btn btn-dark" %>
+    </div>
+
+<hr>
+
+    <div class="d-flex justify-content-center align-items-center">
+      <h5 id="btn-options" class="btn btn-outline-dark mx-2">Show advanced options</h5>
+      <h5 id="btn-themes" class="btn btn-outline-dark mx-2">Show Bootswatch themes</h5>
+      <h5 id="reset" class="btn btn-outline-danger mx-2"><i class="fas fa-undo-alt"></i></h5>
+    </div>
+    <div id="options" style="display : none;">
+      <div class="container">
+      <br>
+        <div class="row">
+          <div class="col-lg">
+            <%= f.label :background %>
+            <%= f.color_field :background, type:"color", value:"#ffffff", class:"form-control" %> 
+
+            <%= f.label :form_background %>
+            <%= f.color_field :form_background, type:"color", value:"#ffffff", class:"form-control" %> 
+
+            <%= f.label :inner_background %>
+            <%= f.color_field :inner_background, type:"color", value:"#e9ecef", class:"form-control" %> 
+          </div>
+
+          <div class="col-lg">
+            <%= f.label :light %>
+            <%= f.color_field :light, type:"color", value:"#f8f9fa", class:"form-control" %> 
+
+            <%= f.label :dark %>
+            <%= f.color_field :dark, type:"color", value:"#343a40", class:"form-control" %>                 
+          </div>
+          
+          <div class="col-lg">
+            <%= f.label :text_light %>
+            <%= f.color_field :text_light, type:"color", value:"#ffffff", class:"form-control" %> 
+
+            <%= f.label :text_dark %>
+            <%= f.color_field :text_dark, type:"color", value:"#212529", class:"form-control" %> 
+
+            <%= f.label :link_hover %>
+            <%= f.color_field :link_hover, type:"color", value:"#0056b3", class:"form-control" %> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <% end %>
+
+</div>
+

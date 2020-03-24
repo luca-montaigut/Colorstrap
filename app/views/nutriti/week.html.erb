@@ -1,0 +1,208 @@
+<div class="container-fluid colorstrap">
+
+  <%= render 'colorform' %>
+
+  <hr>
+    <p class="text-center text-muted">(Don't worry about the colors triggered from actions (such as hovers) that are not displayed yet, they are generated correctly in CSS but they’re not yet integrated in JS on this page…</b>
+  <hr>
+
+  <%= render 'cdn' %>
+
+
+</div>
+  <div class="container">
+    <h1 class="text-center">Your colors preview on <span id="theme_name">Default</span> theme :</h1>
+    <hr>
+  </div>
+<%= render 'nutriweek' %>
+
+
+
+<style>
+  .colorstrap {
+    font-size : 1,3em;
+    color : #454545;
+    background-color : #fefefe;
+  }
+
+  .colorstrap .btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+
+  .colorstrap .btn-dark:focus, .colorstrap .btn-dark.focus {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+    box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
+  }
+
+  .colorstrap .btn-dark.disabled, .colorstrap .btn-dark:disabled {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-outline-dark {
+    color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-outline-dark:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+
+  .colorstrap .btn-outline-dark:focus, .colorstrap .btn-outline-dark.focus {
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+  }
+
+  .colorstrap .btn-outline-dark.disabled, .colorstrap .btn-outline-dark:disabled {
+    color: #343a40;
+    background-color: transparent;
+  }
+
+
+  .colorstrap .btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .colorstrap .btn-outline-danger:hover {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  .colorstrap .btn-outline-danger:focus, .btn-outline-danger.focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
+  }
+
+  .colorstrap .btn-outline-danger.disabled, .btn-outline-danger:disabled {
+    color: #dc3545;
+    background-color: transparent;
+  }
+
+  .colorstrap .text-muted {
+    color: #6c757d !important;
+  }
+
+</style>
+
+<script>
+
+  let root = document.documentElement;
+  let btnOptions = document.getElementById('btn-options')
+  let option = document.getElementById('options')
+  let reset = document.getElementById('reset')
+  let themes = document.getElementById('themes')
+  let btnThemes = document.getElementById('btn-themes')
+
+  function pageColors(){
+    root.style.setProperty('--primary', document.getElementById('primary').value);
+    root.style.setProperty('--secondary', document.getElementById('secondary').value);
+    root.style.setProperty('--success', document.getElementById('success').value);
+    root.style.setProperty('--info', document.getElementById('info').value);
+    root.style.setProperty('--warning', document.getElementById('warning').value);
+    root.style.setProperty('--danger', document.getElementById('danger').value);
+    root.style.setProperty('--background', document.getElementById('background').value);
+    root.style.setProperty('--light', document.getElementById('light').value);
+    root.style.setProperty('--dark', document.getElementById('dark').value);
+    root.style.setProperty('--text-light', document.getElementById('text_light').value);
+    root.style.setProperty('--text-dark', document.getElementById('text_dark').value);
+    root.style.setProperty('--link-hover', document.getElementById('link_hover').value);
+    root.style.setProperty('--form-background', document.getElementById('form_background').value);
+    root.style.setProperty('--inner-background', document.getElementById('inner_background').value);
+  }
+
+  function resetColors(){
+    document.getElementById('primary').value = "#007bff";
+    document.getElementById('secondary').value = "#6c757d";
+    document.getElementById('success').value = "#28a745";
+    document.getElementById('info').value = "#17a2b8";
+    document.getElementById('warning').value = "#ffc107";
+    document.getElementById('danger').value = "#dc3545";
+    document.getElementById('background').value = "#ffffff";
+    document.getElementById('light').value = "#f8f9fa";
+    document.getElementById('dark').value = "#343a40";
+    document.getElementById('text_light').value = "#ffffff";
+    document.getElementById('text_dark').value = "#212529";
+    document.getElementById('link_hover').value = "#0056b3";
+    document.getElementById('form_background').value = "#ffffff";
+    document.getElementById('inner_background').value = "#e9ecef";
+    pageColors()
+  }
+
+  function hideShowOptions() {
+      if (btnOptions.innerHTML.includes("Show")) {
+      options.style.display = "flex"
+      btnOptions.innerHTML = "Hide advanced options"
+    } else if (btnOptions.innerHTML.includes("Hide")) {
+      options.style.display = "none"
+      btnOptions.innerHTML = "Show advanced options"    
+    }
+  }
+
+  function changeTheme(e) {
+    let cdn = document.getElementById('cdn').children
+    for (let i = 0; i < cdn.length; i++) {
+      if (cdn[i].classList.contains(e.srcElement.id)) {
+        cdn[i].disabled = false
+      } else {
+        cdn[i].disabled = true
+      }
+    }
+    switch (e.srcElement.innerHTML) {
+      case "Cyborg":
+        root.style.setProperty('--background', document.getElementById('background').value = "#060606");
+        break;
+      case "Darkly":
+        root.style.setProperty('--background', document.getElementById('background').value = "#222222");
+        root.style.setProperty('--text-dark', document.getElementById('text_dark').value = "#828282");
+        root.style.setProperty('--inner-background', document.getElementById('inner_background').value = "#444444");
+        break;
+      case "Slate":
+        root.style.setProperty('--background', document.getElementById('background').value = "#272b30");
+        root.style.setProperty('--text-dark', document.getElementById('text_dark').value = "#ffffff");
+        break;
+      case "Solar":
+        root.style.setProperty('--background', document.getElementById('background').value = "#002b37");
+        break;
+      case "Superhero":
+        root.style.setProperty('--background', document.getElementById('background').value = "#2a3e51");
+        break;
+
+      default:
+        root.style.setProperty('--background', document.getElementById('background').value = "#ffffff");
+        root.style.setProperty('--text-dark', document.getElementById('text_dark').value = "#212529");
+        root.style.setProperty('--inner-background', document.getElementById('inner_background').value = "#E9ECEF");
+        break;
+    }
+    document.getElementById("theme_name").innerHTML = e.srcElement.innerHTML
+  }
+
+  function hideShowThemes() {
+      if (btnThemes.innerHTML.includes("Show")) {
+      themes.style.display = "flex"
+      btnThemes.innerHTML = "Hide Bootswatch themes"
+    } else if (btnThemes.innerHTML.includes("Hide")) {
+      themes.style.display = "none"
+      btnThemes.innerHTML = "Show Bootswatch themes"    
+    }
+  }
+
+  addEventListener("change", pageColors);
+  btnOptions.addEventListener('click', hideShowOptions);
+  reset.addEventListener("click", resetColors);
+  themes.addEventListener('click', changeTheme);
+  btnThemes.addEventListener('click', hideShowThemes);
+
+</script>
