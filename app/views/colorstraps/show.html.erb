@@ -2,6 +2,7 @@
   <%= link_to "« Back to generator", root_path, class:"btn btn-primary"%> | 
   <%= link_to "Download Custom Bootstap Default CSS", colorstrap_path(@color.id, notice: "min", format: :css), download: "colorstrap.min.css", class:"btn btn-success" %> | 
   <%= link_to "Download Overlay Colorstrap for Theme", colorstrap_path(@color.id, notice: "overlay", format: :css), download: "colorstrap.overlay.css", class:"btn btn-info" %>
+  <%= link_to "Download Varaibles SCSS Colorstrap", colorstrap_path(@color.id, notice: "variables", format: :css), download: "_variables.scss", class:"btn btn-warning" %>
 </div>
 <hr>
 

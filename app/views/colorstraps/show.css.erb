@@ -1,5 +1,8 @@
-<% if params[:notice] = "min" %>
+<% puts "notice #{params[:notice]}" %>
+<% if params[:notice] == "min" %>
   <%= render 'min' %>
-<% else %>
+<% elsif params[:notice] == "overlay" %>
   <%= render 'overlay' %>
+<% else %>
+  <%= render 'variables' %>
 <% end %>
